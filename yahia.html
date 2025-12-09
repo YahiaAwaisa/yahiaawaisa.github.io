@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yahia Awaisa</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: white;
+        position: relative;
+        height: 2000px;
+    }
+
+    .header {
+        background-color: #ffffff;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #ccc;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+    }
+
+    .header a {
+        margin-right: 20px;
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        transition: all 0.2s ease;
+        cursor: pointer;
+    }
+
+    .header a:hover {
+        color: #555;
+        transform: translateY(-2px);
+    }
+
+    .profile-container {
+        padding: 120px 20px 20px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .profile-img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        border: 2px solid white;
+        object-fit: cover;
+        object-position: center 40%;
+        transition: transform 0.3s ease;
+        margin-bottom: 10px;
+    }
+
+    .profile-img:hover {
+        transform: scale(1.2);
+    }
+
+    .name {
+        font-size: 24px;
+        font-weight: bold;
+        margin: 0 0 5px 0;
+    }
+
+    .profession {
+        font-size: 16px;
+        color: #555;
+        margin: 0 0 15px 0;
+    }
+
+    .location {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .location img {
+        width: 24px;
+        height: 16px;
+        margin-left: 10px;
+    }
+
+    .contacts {
+        font-size: 16px;
+        line-height: 1.6;
+        display: flex;
+        flex-direction: column;
+        gap: 8px; 
+    }
+
+    .contacts a {
+        text-decoration: none;
+        color: #007BFF;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 8px; 
+    }
+
+    .contacts a img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .contacts a:hover {
+        text-decoration: underline;
+    }
+
+    /* الأقسام absolute */
+    .my-story, .publications, .cv {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        width: 80%;
+    }
+
+.my-story {
+    top: 50px;
+}
+
+.my-story p {
+    max-width: 600px;
+    margin: 0 auto;
+    word-wrap: break-word;
+    line-height: 1.5;
+}
+
+
+.publications {
+    top: 1550px;
+}
+
+.cv {
+    top: 1690px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+    <a onclick="scrollToSection('my-story')">My Story</a>
+    <a onclick="scrollToSection('publications')">Publications</a>
+    <a onclick="scrollToSection('cv')">CV</a>
+</div>
+
+
+<div class="my-story">
+    <h2>My Story</h2>
+    <p>I started getting into all of this when I was around 13. At that time, I used to play GTA V on FiveM almost every day. I would jump between servers, have fun, and honestly I was always impressed by how everything looked and worked inside those servers.
+
+At some point, the idea hit me:
+“Why don’t I make my own server so people can join and enjoy it?”
+The funny part is… I didn’t know anything about programming. Literally nothing.
+
+So at the beginning, I depended on ready backups and public mods because that was the only option I had. But something kept bothering me: those mods had other servers’ credits written all over them. I didn’t want people joining my server and seeing someone else’s name, so I downloaded Notepad++ and started doing the only thing I actually could do—searching for the credits inside the files and changing them.
+
+That was my first step into the whole thing.
+
+Later, I started messing with colors… then text… then sizes. Slowly things started making sense. I began learning how Lua functions worked and over time I actually understood most of the important parts of Lua. After that, I began creating small things on my own, like panels using libraries such as dx GUI.
+
+Then I wanted to make an HTML UI for FiveM. Same story again: I took public panels, changed colors, modified things, and from there I started understanding HTML. With time and a lot of messing around, I reached a point where I already knew Lua and HTML well.
+
+My passion for FiveM stayed with me for years, but at some point it started fading. I felt like I wanted to move on to something bigger. That’s when I decided to get into web development.
+
+I started learning JavaScript.
+And just like everything else, I didn’t take any courses or follow any tutorials. My way of learning was always the same: delete a part of the code → see what breaks → understand why it broke → learn. It sounds weird, but it worked perfectly for me.
+
+After JavaScript, I learned PHP.
+PHP was easy for me because I already understood how databases worked from FiveM — login systems, storing player data, fetching them, all that stuff. FiveM honestly helped me build a solid base without me even noticing.
+
+Later I learned SQL properly, and then started making websites with PHP, HTML, and JavaScript. I was really happy with that progress until I realized that PHP alone isn’t the best choice anymore and that I needed to move forward.
+
+So I switched to Node.js and React.
+I used Express for the backend, and this is where I really started understanding backend development in a deep way. And again, all of this was just me working alone, practicing and learning step by step.
+
+At some point, I also got interested in cybersecurity. I’ve always loved exploring different areas, not just staying in one place. So I started experimenting with malware inside a virtual machine, learned a bit of C++, and even made some basic old-school malware just to understand how things work.
+
+Then I joined a Discord server with people from around the world. I never told them I wanted to learn hacking because they’d instantly assume I wanted to do something illegal. I only wanted to understand the concepts behind it. So I just discussed random stuff with them, sometimes without understanding much, but those conversations gave me clues. I gathered that information, researched on my own, and finally understood how things actually work behind the scenes.
+
+I learned that you don’t connect directly to someone’s device because the firewall will block you. Instead, you create malware that connects to you.
+But of course, I never used my device; I used online servers and built my own C2 system. The idea was simple: the victim runs the malware → it connects to my server → I send commands → the malware replies. Just for learning purposes, not to harm anyone.
+
+I also learned about zero-days, rootkits, bootkits, how antiviruses work, how malware hides itself, and all that stuff. Again, all alone, just because I love learning.
+
+Yesterday, my cousin Sami Abu Al-Heija (he works at Google and Intel and he’s really good at what he does) talked to me about scalability and backend architecture. I searched everything he mentioned and honestly it opened a new world for me.
+
+I learned how to scale web apps — like if 50,000 people enter your site at the same time. You can’t rely on one server. You either upgrade it (which is not ideal) or you use multiple servers and a load balancer that distributes the traffic. Even if one server goes down, the load balancer switches to the next one. This pushed me into learning more about AWS and even algorithms.
+
+And honestly… I don’t think I’ll ever stop learning.</p>
+</div>
+
+<div class="publications">
+    <h2>Publications</h2>
+    <p>No publications yet</p>
+</div>
+
+<div class="cv">
+    <h2>CV</h2>
+    <a href="https://yahia.pdf" target="_blank">https://yahia.pdf</a>
+</div>
+
+<div class="profile-container">
+    <img src="yahia.jpeg" alt="yahia photo" class="profile-img">
+    <p class="name">Yahia Awaisa</p>
+    <p class="profession">Web Developer</p>
+
+
+    <div class="location">
+        Jordan, Amman
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c0/Flag_of_Jordan.svg" alt="علم الأردن">
+    </div>
+	
+    <div class="contacts">
+        <a href="https://github.com/yahiaAwaisa" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub">
+            GitHub
+        </a>
+        <a href="https://facebook.com/yahiabassamawaisa" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+            Facebook
+        </a>
+        <a href="https://x.com/yahiaawisa?s=21" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/X_%28formerly_Twitter%29_logo_late_2025.svg" alt="X">
+            X
+        </a>
+        <a href="https://instagram.com/ya_7i.a" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+            Instagram
+        </a>
+        <a href="https://www.reddit.com/user/Living-Can5631/" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Reddit_logo.svg" alt="Reddit">
+            Reddit
+        </a>
+
+        <div style="display: flex; align-items: center; gap: 8px;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Discord_colour_textlogo_%282021%29.svg" alt="Discord" width="20" height="20">
+            sprite7_
+        </div>
+        <div style="display: flex; align-items: center; gap: 8px;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="Email" width="20" height="20">
+            yahiabassamawaisa@gmail.com
+        </div>
+        <div style="display: flex; align-items: center; gap: 8px;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Phone_font_awesome.svg" alt="Phone" width="20" height="20">
+            +962 778251032
+        </div>
+    </div>
+</div>
+
+<script>
+function scrollToSection(sectionClass) {
+    const el = document.querySelector('.' + sectionClass);
+    const headerOffset = document.querySelector('.header').offsetHeight;
+    const elementPosition = el.getBoundingClientRect().top;
+    const offsetPosition = elementPosition + window.pageYOffset - headerOffset - 10;
+    window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+    });
+}
+</script>
+
+
+</body>
+</html>
